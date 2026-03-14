@@ -3,19 +3,20 @@
 # 1. 导入库 (Import)
 import numpy as np  # 导入 NumPy 库，并简写为 np，这是工业界标准用法
 
+
 def verify_matrix_multiplication():
     """
     函数功能：验证矩阵乘法的交换律并检查浮点数精度
     遵循 T3 代码规范：使用清晰的函数名和文档字符串
     """
-    
+
     # 2. 创建矩阵 (Array Creation)
     # np.array() 将列表转换为 NumPy 数组（矩阵）
     # 这里定义两个 2x2 的方阵
-    A = np.array([[1, 2], 
+    A = np.array([[1, 2],
                   [3, 4]])
-    
-    B = np.array([[5, 6], 
+
+    B = np.array([[5, 6],
                   [7, 8]])
 
     # 3. 矩阵乘法运算 (Matrix Multiplication)
@@ -26,8 +27,8 @@ def verify_matrix_multiplication():
 
     # 4. 验证交换律 (Commutative Law Check)
     # 线性代数中，矩阵乘法通常不满足交换律 (A@B != B@A)
-    is_equal = np.array_equal(C1, C2) # 比较两个数组是否完全相同
-    
+    is_equal = np.array_equal(C1, C2)  # 比较两个数组是否完全相同
+
     print("--- 矩阵乘法验证 ---")
     print(f"矩阵 A:\n{A}")
     print(f"矩阵 B:\n{B}")
@@ -41,10 +42,12 @@ def verify_matrix_multiplication():
     val1 = 0.1 + 0.2
     val2 = 0.3
     diff = abs(val1 - val2)  # 计算两者的绝对差值
-    
+
     print("\n--- 浮点数精度验证 ---")
     print(f"0.1 + 0.2 的结果: {val1}")
-    print(f"误差值 (Difference): {diff:.2e}") # 使用科学计数法打印误差
+    print(f"0.3 的结果: {val2}")
+    print(f"误差值 (Difference): {diff:.2e}")  # 使用科学计数法打印误差
+
 
 # 执行函数
 if __name__ == "__main__":
