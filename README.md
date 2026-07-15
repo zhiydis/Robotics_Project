@@ -28,3 +28,5 @@ $$\frac{dE}{d\theta} = \frac{\partial E}{\partial u} \cdot \frac{du}{d\theta}$$
 ### 3. 全微分 (Total Differential)
 系统整体变化量是各维度偏导贡献的线性累加：
 $$df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy$$
+## 📚 现代控制理论专题
+* [点击阅读：现代控制理论核心架构与工程落地全手册](./modern_control_theory.md)
